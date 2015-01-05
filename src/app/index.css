@@ -1,0 +1,62 @@
+ body {
+   margin: 0;
+   padding: 0;
+ }
+
+.navbar {
+  margin: 0;
+}
+
+.navbar-inverse .navbar-brand {
+  color: white;
+}
+
+.navbar-inverse .navbar-brand:hover {
+  color: #1994AA;
+}
+
+#wildnav a {
+  color: white;
+}
+
+#wildnav a:hover {
+  color: #1994AA;
+}
+
+#main {
+  padding: 0;
+}
+
+.container-fluid .jumbotron {
+  border-radius: 0;
+}
+.jumbotron {
+  background: rgba(255,255,255,0.1);
+  position: relative;
+  overflow: hidden;
+  min-height: 300px;
+  margin-bottom: 0;
+}
+
+.headline h1 {
+  color: white;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.4em;
+  margin-top: 0;
+}
+
+.mountains {
+  position: absolute;
+  top: -16ex;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+}
+
+div.soundcloud {
+  margin: 0;
+  float: right;
+  padding: 0;
+  width: 50%;
+}
