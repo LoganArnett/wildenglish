@@ -60,11 +60,28 @@
     });
     </script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script>
+    $(function() {
+      $('a[href*=#]:not([href=#])').click(function() {
+        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+          var target = $(this.hash);
+          target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+          if (target.length) {
+            $('html,body').animate({
+              scrollTop: target.offset().top
+            }, 1000);
+            return false;
+          }
+        }
+      });
+    });
+    </script>
     <!-- build:js({.tmp,src}) scripts/app.js -->
     <!-- inject:js -->
     <script src="app/index.js"></script>
-    <script src="app/main/main.controller.js"></script>
     <script src="components/navbar/navbar.controller.js"></script>
+    <script src="app/main/main.controller.js"></script>
     <!-- endinject -->
     <!-- inject:partials -->
     <!-- angular templates will be automatically converted in js and inserted here -->
