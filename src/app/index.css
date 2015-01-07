@@ -1,6 +1,7 @@
  body {
    margin: 0;
    padding: 0;
+   position: relative;
  }
 
 .navbar {
@@ -12,7 +13,7 @@
 }
 
 .navbar-inverse .navbar-brand:hover {
-  color: #1994AA;
+  color: white;
 }
 
 #wildnav a {
@@ -20,7 +21,7 @@
 }
 
 #wildnav a:hover {
-  color: #1994AA;
+  color: white;
 }
 
 #main {
@@ -38,7 +39,6 @@
   margin-top: 6ex;
   margin-bottom: 0;
   text-align: center;
-
 }
 
 .headline h1 {
@@ -56,7 +56,7 @@
   top: 0;
   left: 0;
   z-index: -1;
-  width: 100%;
+  width: 120%;
   height: 320px;
 }
 
@@ -89,6 +89,10 @@ div.gigs {
   text-align: center;
 }
 
+.gigs iframe {
+  height: 300px;
+}
+
 .woods {
   position: absolute;
   top: 0;
@@ -110,6 +114,7 @@ div.gigs {
   padding-top: 20%;
   margin: 6% 0;
 }
+
 .meet-us h3 {
   width: 100%;
   margin: 0 auto;
@@ -128,116 +133,168 @@ figcaption {
   font-size: 15pt;
 }
 
-/* body {
+.playin {
   margin: 0;
   padding: 0;
-}
-
-.navbar {
-  margin: 0;
-}
-
-.navbar-inverse .navbar-brand {
-  color: white;
-}
-
-.navbar-inverse .navbar-brand:hover {
-  color: #1994AA;
-}
-
-#wildnav a {
-  color: white;
-}
-
-#wildnav a:hover {
-  color: #1994AA;
-}
-
-#main {
-  padding: 0;
-}
-
-.container-fluid .jumbotron {
-  border-radius: 0;
-}
-.jumbotron {
-  background: rgba(255,255,255,0.1);
-  position: relative;
-  overflow: hidden;
-  min-height: 300px;
-  margin-bottom: 0;
-}
-
-.headline h1 {
-  color: white;
-  font-family: 'Yanone Kaffeesatz', sans-serif;
-  text-transform: uppercase;
-  letter-spacing: 0.4em;
-  margin-top: 0;
-}
-
-.mountains {
-  position: absolute;
-  top: -16ex;
-  left: 0;
-  z-index: -1;
-  width: 100%;
-}
-
-div.soundcloud {
-  margin: 0;
-  position: relative;
-  padding-bottom: 29.7%;
-  height: 0;
-  overflow: hidden;
-}
-
-.soundcloud iframe {
-  position: absolute;
-  top:0;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
-}
-
-div.gigs {
-  position: relative;
-  background-color: rgba(0,0,0,0.4);
-  color: white;
-  line-height: 6ex;
-}
-
-.gigs h2 {
   text-align: center;
 }
 
-.woods {
-  position: absolute;
-  top: 0;
-  left: 0;
+.contact {
+  background-color: rgba(10,50,200,0.3);
+  height: 94vh;
+  position: relative;
+  padding-top: 15%;
+}
+
+.contact h3 {
   width: 100%;
-}
-
-.dates {
-  list-style-type: none;
-}
-
-.band {
-  width: 80%;
-  height: 100vh;
   margin: 0 auto;
-
-}
-
-.meet-us img {
-  display: flex;
-  width: 250px;
-  height: 250px;
-  margin: 8% auto;
-}
-
-figcaption {
   text-align: center;
   font-size: 20pt;
-} */
+}
+
+.contact p {
+  text-align: center;
+  padding: 15% 0;
+}
+
+.social {
+  position: absolute;
+  bottom: 15%;
+  left: 0;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.social p {
+  display: inline;
+}
+
+.facebook a {
+  color: #335795;
+  padding: 0 10%;
+}
+
+.cloud a {
+  color: white;
+  padding: 0 10%;
+}
+
+.email a, .call a {
+  color: white;
+  font-size: 18pt;
+}
+
+footer {
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+  .navbar-inverse .navbar-brand:hover {
+    color: #1994AA;
+  }
+
+  #wildnav a:hover {
+    color: #1994AA;
+  }
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+  .jumbotron {
+    min-height: 320px;
+  }
+
+  .mountains {
+    position: absolute;
+    top: -41%;
+    left: -0.3%;
+    z-index: -1;
+    width: 100%;
+    height: 500px;
+  }
+
+  div.soundcloud {
+    padding-bottom: 29.7%;
+  }
+
+  .soundcloud iframe {
+    height: 53.8vh;
+  }
+
+  div.gigs {
+    padding-top: 0;
+    /* padding-bottom: ; */
+  }
+
+  .gigs iframe {
+    height: 43.65vh;
+  }
+
+  .meet-us {
+  /*   padding: 0; */
+    padding-top: 0;
+    margin: 4% 0;
+    height: 94vh;
+  }
+
+  .meet-us img {
+    display: flex;
+    width: 250px;
+    height: 250px;
+    margin: 2% auto;
+  }
+
+  figcaption {
+    font-size: 20pt;
+  }
+
+  .contact {
+    height: 94vh;
+    position: relative;
+    padding-top: 5%;
+  }
+
+  .contact h3 {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 28pt;
+  }
+
+  .contact p {
+    text-align: center;
+    padding: 5% 0;
+  }
+
+  .social{
+    bottom: 30%;
+  }
+
+  .facebook a {
+    color: #335795;
+  }
+
+  .cloud a {
+    color: white;
+  }
+
+  .email a, .call a {
+    color: white;
+    font-size: 25pt;
+  }
+
+}
