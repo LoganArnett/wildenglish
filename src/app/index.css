@@ -215,7 +215,7 @@ footer {
 @media (min-width: 1200px) {
 
   .jumbotron {
-    min-height: 320px;
+    min-height: 310px;
   }
 
   .mountains {
@@ -236,7 +236,7 @@ footer {
   }
 
   div.gigs {
-    padding-top: 0;
+    padding-top: 2%;
     /* padding-bottom: ; */
   }
 
@@ -265,7 +265,7 @@ footer {
   .contact {
     height: 94vh;
     position: relative;
-    padding-top: 5%;
+    padding-top: 10%;
   }
 
   .contact h3 {
