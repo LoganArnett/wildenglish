@@ -236,8 +236,12 @@ footer {
   }
 
   div.gigs {
-    padding-top: 2%;
+    padding-top: 0;
     /* padding-bottom: ; */
+  }
+
+  .gigs h2 {
+    padding-bottom: 2%;
   }
 
   .gigs iframe {
