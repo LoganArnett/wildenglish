@@ -10,8 +10,8 @@ angular.module('wildenglish', ['ngAnimate', 'ngTouch', 'restangular', 'ngRoute',
         templateUrl: 'app/main/main.html',
         controller: 'MainCtrl',
         resolve: {
-                googleCalEvents: function(Restangular){
-                    return Restangular.one('events?key=AIzaSyAZgcdMkQSiU18Hx8sgSQCKZXxljAwMDGU&callback=JSON').get();
+                calendarEvents: function(Restangular){
+                    return Restangular.one('events?key=AIzaSyAZgcdMkQSiU18Hx8sgSQCKZXxljAwMDGU').get();
                 }
             }
       })
