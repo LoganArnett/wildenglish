@@ -79,9 +79,9 @@ div.soundcloud {
 
 div.gigs {
   position: relative;
-  background-color: rgba(0,0,0,0.4);
+  background-color: rgba(0,0,0,0.8);
   color: white;
-  line-height: 6ex;
+  line-height: 4ex;
   padding-top: 10%;
 }
 
@@ -104,9 +104,28 @@ div.gigs {
   list-style-type: none;
 }
 
+.details {
+  padding-bottom: 2ex;
+  text-align: center;
+}
+
+.details p {
+  line-height: 2ex;
+  
+}
+
+.details a {
+    color: #1994aa;
+}
+
 .band {
   width: 80%;
   margin: 0 auto;
+}
+
+figure {
+  margin: 0 auto;
+  width: 90%;
 }
 
 .meet-us {
@@ -125,7 +144,7 @@ div.gigs {
   display: flex;
   width: 200px;
   height: 200px;
-  margin: 10% 6%;
+  margin: 10% auto;
 }
 
 figcaption {
@@ -209,6 +228,31 @@ footer {
   #wildnav a:hover {
     color: #1994AA;
   }
+    
+  div.gigs {
+    padding-top: 0;
+    min-height: 420.3px;
+  }
+    
+  div.soundcloud {
+    padding-bottom: 45%;
+  }
+    
+  .soundcloud iframe {
+    height: 53.8vh;
+  }
+    
+  figure {
+    margin: 0 auto;
+    width: 50%;
+  }
+    
+  .meet-us {
+    padding-top: 5%;
+    margin: 3% 0;
+  }
+    
+  
 }
 
 /* Large devices (large desktops, 1200px and up) */
@@ -228,7 +272,7 @@ footer {
   }
 
   div.soundcloud {
-    padding-bottom: 29.7%;
+    padding-bottom: 32.7%;
   }
 
   .soundcloud iframe {
@@ -237,6 +281,7 @@ footer {
 
   div.gigs {
     padding-top: 0;
+    min-height: 420.3px;
     /* padding-bottom: ; */
   }
 

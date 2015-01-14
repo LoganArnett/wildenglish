@@ -15,7 +15,9 @@
   <div id="shows" class="gigs col-xs-12 col-md-6">
     <h2>Our Shows</h2>
       <section class="details" ng-repeat="item in app.items">
-        <p>{{item.summary}} {{item.location}}</p>
+        <a href="https://www.google.com/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q={{item.location}}" target="_blank">           <p>{{item.summary}} {{item.location}}</p>
+          <p><date>{{item.start.dateTime | date:'EEEE, MMMM d, y @ h:mm a'}}</date></p>
+        </a>
       </section>
     
     <p>{{poo}}</p>
