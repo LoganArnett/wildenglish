@@ -16,7 +16,7 @@
       <section class="details" ng-repeat="item in app.items | orderBy: 'start.dateTime'">
         <a href="https://www.google.com/maps/place/{{item.location}}" target="_blank">           
           <p>{{item.summary}}</p>
-          <p><date ng-hide="item.start.dateTime < app.today">{{item.start.dateTime | date:'EEEE, MMMM d, y @ h:mm a'}}</date></p>
+          <p><date ng-hide="item.start.dateTime < app.today">{{item.start.dateTime | date:'EEEE, MM/d/y @ h:mm a'}}</date></p>
         </a>
       </section>
 <!--    <iframe src="https://www.google.com/calendar/embed?showTitle=0&amp;showPrint=0&amp;showTabs=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;src=5hdm5prrvpkfl6h749ptci39eg%40group.calendar.google.com&amp;color=%23528800&amp;ctz=America%2FLos_Angeles" style=" border-width:0 " width="100%" frameborder="0" scrolling="no"></iframe>-->
