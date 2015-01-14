@@ -9,6 +9,7 @@ angular.module('wildenglish', ['ngAnimate', 'ngTouch', 'restangular', 'ngRoute',
       .when('/', {
         templateUrl: 'app/main/main.html',
         controller: 'MainCtrl',
+        controllerAs: 'app',
         resolve: {
                 calendarEvents: function(Restangular){
                     return Restangular.one('events?key=AIzaSyAZgcdMkQSiU18Hx8sgSQCKZXxljAwMDGU').get();
@@ -21,10 +22,7 @@ angular.module('wildenglish', ['ngAnimate', 'ngTouch', 'restangular', 'ngRoute',
 
 
   })
+//.service('calendarEvents', function (Restangular) { 
+//    return Restangular.one('events?key=AIzaSyAZgcdMkQSiU18Hx8sgSQCKZXxljAwMDGU').get();
+// })
 ;
-/*resolve: {
-                resolvedData: function(Restangular){
-                    return Restangular.one('Items').get();
-                }
-            }
-            */
