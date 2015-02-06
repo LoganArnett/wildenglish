@@ -2,26 +2,33 @@
    margin: 0;
    padding: 0;
    position: relative;
+   background: url(/assets/images/birdsmountain.jpeg) no-repeat;
+   background-size: 100%;
  }
 
+.container-fluid {
+    width: 65%;
+    margin: 0 auto;
+}
 .navbar {
   margin: 0;
+  text-align: center;
 }
 
-.navbar-inverse .navbar-brand {
-  color: white;
+.navbar-nav {
+    text-align: center;
+    float: none;
+    width: 40%;
+    margin: 0 auto;
+    align-content: center;
 }
 
-.navbar-inverse .navbar-brand:hover {
-  color: white;
+.navbar-nav > li > a {
+  color: #ff3200;
 }
 
-#wildnav a {
-  color: white;
-}
-
-#wildnav a:hover {
-  color: white;
+#wildnav li a:hover {
+  color: #ff3200;
 }
 
 #main {
@@ -42,7 +49,7 @@
 }
 
 .headline h1 {
-  color: white;
+  color: #ff3200;
   font-family: 'Yanone Kaffeesatz', sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.3em;
@@ -221,13 +228,13 @@ footer {
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
 
-  .navbar-inverse .navbar-brand:hover {
-    color: #1994AA;
-  }
+.navbar-nav > li > a {
+  color: #ff3200;
+}
 
-  #wildnav a:hover {
-    color: #1994AA;
-  }
+#wildnav li a:hover {
+  color: #ff3200;
+}
     
   div.gigs {
     padding-top: 0;
