@@ -24,7 +24,7 @@
 }
 
 .navbar-nav > li > a {
-  color: #ff3200;
+  color: #000;
 }
 
 #wildnav li a:hover {
@@ -67,158 +67,7 @@
   height: 320px;
 }
 
-div.soundcloud {
-  margin: 0;
-  position: relative;
-  padding-bottom: 50%;
-  height: 348px;
-  overflow: hidden;
-}
 
-.soundcloud iframe {
-  position: absolute;
-  top:0;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
-}
-
-div.gigs {
-  position: relative;
-  background-color: rgba(0,0,0,0.8);
-  color: white;
-  line-height: 4ex;
-  padding-top: 10%;
-}
-
-.gigs h2 {
-  text-align: center;
-}
-
-.gigs iframe {
-  height: 300px;
-}
-
-.woods {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-}
-
-.dates {
-  list-style-type: none;
-}
-
-.details {
-  padding-bottom: 2ex;
-  text-align: center;
-}
-
-.details p {
-  line-height: 2ex;
-  
-}
-
-.details a {
-    color: #1994aa;
-}
-
-.band {
-  width: 80%;
-  margin: 0 auto;
-}
-
-figure {
-  margin: 0 auto;
-  width: 90%;
-}
-
-.meet-us {
-  padding: 0;
-  padding-top: 20%;
-  margin: 6% 0;
-}
-
-.meet-us h3 {
-  width: 100%;
-  margin: 0 auto;
-  text-align: center;
-}
-
-.meet-us img {
-  display: flex;
-  width: 200px;
-  height: 200px;
-  margin: 10% auto;
-}
-
-figcaption {
-  text-align: center;
-  font-size: 15pt;
-}
-
-.playin {
-  margin: 0;
-  padding: 0;
-  text-align: center;
-}
-
-.contact {
-  background-color: rgba(10,50,200,0.3);
-  height: 94vh;
-  position: relative;
-  padding-top: 15%;
-}
-
-.contact h3 {
-  width: 100%;
-  margin: 0 auto;
-  text-align: center;
-  font-size: 20pt;
-}
-
-.contact p {
-  text-align: center;
-  padding: 15% 0;
-}
-
-.social {
-  position: absolute;
-  bottom: 15%;
-  left: 0;
-  margin: 0 auto;
-  text-align: center;
-}
-
-.social p {
-  display: inline;
-}
-
-.facebook a {
-  color: #335795;
-  padding: 0 10%;
-}
-
-.cloud a {
-  color: white;
-  padding: 0 10%;
-}
-
-.email a, .call a {
-  color: white;
-  font-size: 18pt;
-}
-
-footer {
-  background-color: rgba(0,0,0,0.8);
-  color: white;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  text-align: center;
-}
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
@@ -229,37 +78,14 @@ footer {
 @media (min-width: 992px) {
 
 .navbar-nav > li > a {
-  color: #ff3200;
+  color: #000;
 }
 
 #wildnav li a:hover {
   color: #ff3200;
+  background-color: transparent;
 }
     
-  div.gigs {
-    padding-top: 0;
-    min-height: 420.3px;
-  }
-    
-  div.soundcloud {
-    padding-bottom: 45%;
-  }
-    
-  .soundcloud iframe {
-    height: 53.8vh;
-  }
-    
-  figure {
-    margin: 0 auto;
-    width: 50%;
-  }
-    
-  .meet-us {
-    padding-top: 5%;
-    margin: 3% 0;
-  }
-  
-}
 
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
@@ -275,81 +101,6 @@ footer {
     z-index: -1;
     width: 100.3%;
     height: 500px;
-  }
-
-  div.soundcloud {
-    padding-bottom: 32.7%;
-  }
-
-  .soundcloud iframe {
-    height: 53.8vh;
-  }
-
-  div.gigs {
-    padding-top: 0;
-    min-height: 420.3px;
-    /* padding-bottom: ; */
-  }
-
-  .gigs h2 {
-    padding-bottom: 2%;
-  }
-
-  .gigs iframe {
-    height: 43.65vh;
-  }
-
-  .meet-us {
-  /*   padding: 0; */
-    padding-top: 0;
-    margin: 4% 0;
-    height: 94vh;
-  }
-
-  .meet-us img {
-    display: flex;
-    width: 250px;
-    height: 250px;
-    margin: 2% auto;
-  }
-
-  figcaption {
-    font-size: 20pt;
-  }
-
-  .contact {
-    height: 94vh;
-    position: relative;
-    padding-top: 10%;
-  }
-
-  .contact h3 {
-    width: 100%;
-    margin: 0 auto;
-    text-align: center;
-    font-size: 28pt;
-  }
-
-  .contact p {
-    text-align: center;
-    padding: 5% 0;
-  }
-
-  .social{
-    bottom: 30%;
-  }
-
-  .facebook a {
-    color: #335795;
-  }
-
-  .cloud a {
-    color: white;
-  }
-
-  .email a, .call a {
-    color: white;
-    font-size: 25pt;
   }
 
 }
