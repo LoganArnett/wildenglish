@@ -1,0 +1,74 @@
+<nav class="navbar navbar-static-top navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#wildnav">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+
+    <div class="collapse navbar-collapse" id="wildnav">
+      <ul class="nav navbar-nav">
+        <li><a ng-href="#music">Music</a></li>
+        <li><a ng-href="#shows">Shows</a></li>
+        <li><a ng-href="#meet-band">Meet The Band</a></li>
+        <li><a ng-href="#contact">Contact</a></li>
+      </ul>
+    </div>
+
+  </div>
+</nav>
+
+<div class="container-fluid" id="main">
+
+  <div class="jumbotron text-center headline">
+    <h1>Wild English</h1>
+<!--    <img class="mountains" src="assets/images/wildmtns.png" alt="mountains">-->
+  </div>
+  
+  <section id="upcoming-shows">
+          <button class="btn btn-wild">
+              Upcoming Shows
+          </button>&nbsp;&nbsp;
+          <a href="https://www.google.com/maps/place/{{item.location}}" ng-repeat="item in app.items | orderBy: 'start.dateTime'" ng-hide="app.oldDates(item.start.dateTime)" class="show-link">
+              <div class="upcoming">
+                
+                      <p class="show-summary">
+                         <date class="show-date">
+                          {{item.start.dateTime | date:'EEE, M/d/yy @ h:mm'}}
+                         </date>
+                          {{item.summary}}&nbsp; - &nbsp;
+                      </p>
+              </div>
+          </a>
+  </section>
+  <section id="soundcloud-tracks" class="soundcloud">
+  
+      <div plangular="https://soundcloud.com/wildenglish/sets/wildenglishset" class="plangular">
+           
+           <section class="track-info row">
+               <section class="track-name band-name col-xs-12 col-md-6">
+                    <p>{{ user.username }}</p>
+                    <h1>
+                        {{ tracks[player.playlistIndex].title }}
+                        <small>{{ currentTime | prettyTime }} | {{ duration | prettyTime }}</small>
+                    </h1>
+                </section>
+                <section class="track-art col-xs-12 col-md-6">
+                    <img ng-src="{{ tracks[player.playlistIndex].artwork_url }}" alt="{{ track.title }}" />
+                </section>
+            </section>
+            <section class="player-buttons row">
+            <button ng-click="play()" ng-if="player.playing != track"><span class="glyphicon glyphicon-play"></span>Play</button>
+            <button ng-click="pause()" ><span class="glyphicon glyphicon-pause"></span>Pause</button>
+            <button ng-click="previous()"><span class="glyphicon glyphicon-fast-backward"></span>Prev</button>
+            <button ng-click="next()"></span>Next<span class="glyphicon glyphicon-fast-forward"></button>
+            </section>
+      </div>
+
+  </section>
+
+
+</div>
