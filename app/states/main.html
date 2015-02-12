@@ -55,6 +55,11 @@
                         {{ tracks[player.playlistIndex].title }}
                         <small>{{ currentTime | prettyTime }} | {{ duration | prettyTime }}</small>
                     </h1>
+                    <div class="progress">
+                      <div class="progress-bar progress-bar-striped" role="progressbar" aria-valuenow="{{ currentTime / duration }}" aria-valuemin="0" aria-valuemax="{{duration}}" style="width: {{ (currentTime / duration) * 100 }}%;">
+                    <span class="sr-only"></span>
+                      </div>
+                    </div>
                 </section>
                 <section class="track-art col-xs-12 col-md-6">
                     <img ng-src="{{ tracks[player.playlistIndex].artwork_url }}" alt="{{ track.title }}" />
