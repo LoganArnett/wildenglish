@@ -173,10 +173,23 @@ a.show-link:hover {
                 width: 18%;
             }
         }
-    }
-    
+    } 
 }
 
+.progress {
+    display: block;
+    width: 100%;
+    height: 0.5rem;
+    margin: 0.75rem 0;
+    background-color: rgba(0, 0, 0, 0.125);
+    border: 0;
+    -webkit-appearance: none;
+    cursor: pointer;
+    
+    .progress-bar-wild {
+        background-color: $wildOrange;
+    }
+}
 
 
 /* Small devices (tablets, 768px and up) */

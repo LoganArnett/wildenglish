@@ -120,6 +120,18 @@ a.show-link:hover {
     .soundcloud .plangular .player-buttons button {
       width: 18%; }
 
+.progress {
+  display: block;
+  width: 100%;
+  height: 0.5rem;
+  margin: 0.75rem 0;
+  background-color: rgba(0, 0, 0, 0.125);
+  border: 0;
+  -webkit-appearance: none;
+  cursor: pointer; }
+  .progress .progress-bar-wild {
+    background-color: #ff0D00; }
+
 /* Small devices (tablets, 768px and up) */
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
