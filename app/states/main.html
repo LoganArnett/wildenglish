@@ -66,7 +66,7 @@
                 </section>
             </section>
             <section class="player-buttons row">
-            <button ng-click="play()" ng-if="player.playing != track"><span class="glyphicon glyphicon-play"></span>Play</button>
+            <button ng-click="play(player.playlistIndex)"><span class="glyphicon glyphicon-play"></span>Play</button>
             <button ng-click="pause()" ><span class="glyphicon glyphicon-pause"></span>Pause</button>
             <button ng-click="previous()"><span class="glyphicon glyphicon-fast-backward"></span>Prev</button>
             <button ng-click="next()"></span>Next<span class="glyphicon glyphicon-fast-forward"></button>
