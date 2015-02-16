@@ -29,7 +29,7 @@
   </div>
   
   <section id="upcoming-shows">
-          <button class="btn btn-wild">
+          <button class="btn btn-wild" ng-click="app.open('lg')">
               Upcoming Shows
           </button>&nbsp;&nbsp;
           <a href="https://www.google.com/maps/place/{{item.location}}" ng-repeat="item in app.items | orderBy: 'start.dateTime'" ng-hide="app.oldDates(item.start.dateTime)" class="show-link">

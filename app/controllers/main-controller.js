@@ -2,7 +2,7 @@
 
 angular.module('wildEnglish')
 
-   .controller('MainCtrl', function(Restangular, calendarEvents) {
+   .controller('MainCtrl', function(Restangular, calendarEvents, $modal) {
     var self = this;
     
     this.events = calendarEvents;
@@ -24,6 +24,18 @@ angular.module('wildEnglish')
         else{
             return false;
         }};
+    
+    this.itemsList = ["item1", "item2", "item3"]
+    
+    this.open = function (size) {
+
+    var modalInstance = $modal.open({
+      templateUrl: '/states/calendarModal.html',
+      size: size,
+    });
+
+  };
+
 
   this.trackList = [{
 "kind":"track",
