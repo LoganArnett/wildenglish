@@ -1,4 +1,6 @@
-<nav class="navbar navbar-static-top navbar-fixed-top">
+<div class="container-fluid" id="main">
+ 
+ <nav class="navbar navbar-static-top navbar-fixed-top">
   <div class="container-fluid">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#wildnav">
@@ -21,7 +23,7 @@
   </div>
 </nav>
 
-<div class="container-fluid" id="main">
+<section id="main-body">
 
   <div class="jumbotron text-center headline">
     <h1>Wild English</h1>
@@ -29,7 +31,7 @@
   </div>
   
   <section id="upcoming-shows">
-          <button class="btn btn-wild" ng-click="app.open('lg')">
+          <button class="btn btn-wild" ng-click="app.open()">
               Upcoming Shows
           </button>&nbsp;&nbsp;
           <a href="https://www.google.com/maps/place/{{item.location}}" ng-repeat="item in app.items | orderBy: 'start.dateTime'" ng-hide="app.oldDates(item.start.dateTime)" class="show-link">
@@ -44,6 +46,7 @@
               </div>
           </a>
   </section>
+  <section id="calendar"></section>
   <section id="soundcloud-tracks" class="soundcloud">
   
       <div plangular="https://soundcloud.com/wildenglish/sets/wildenglishset" class="plangular">
@@ -75,5 +78,17 @@
 
   </section>
 
-
+</section>
 </div>
+
+<section id="contact">
+    <div id="ferry-ride">
+    <video autoplay loop poster="../assests/images/birdsmountain.jepg" id="bgVideo">
+        <source src="../assets/videos/seattleferryride.webm" type="video/webm">
+        <source src="../assets/videos/seattleferryride.mp4" type="video/mp4">
+    </video>
+</div>
+</section>
+<footer>
+    &copy; Wild English 2015
+</footer>

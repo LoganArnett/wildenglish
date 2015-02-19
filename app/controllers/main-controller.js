@@ -2,7 +2,7 @@
 
 angular.module('wildEnglish')
 
-   .controller('MainCtrl', function(Restangular, calendarEvents, $modal) {
+   .controller('MainCtrl', function(Restangular, calendarEvents, $modal, uiCalendarConfig) {
     var self = this;
     
     this.events = calendarEvents;
@@ -25,16 +25,47 @@ angular.module('wildEnglish')
             return false;
         }};
     
-    this.itemsList = ["item1", "item2", "item3"]
-    
-    this.open = function (size) {
+//    this.openCal = function(){
+//        $('#calendar').fullCalendar({
+//        events: {
+//            googleCalendarApiKey: 'AIzaSyAZgcdMkQSiU18Hx8sgSQCKZXxljAwMDGU',
+//            googleCalendarId: '5hdm5prrvpkfl6h749ptci39eg@group.calendar.google.com'
+//        }
+//  });
+//    };
+    this.open = function () {
 
     var modalInstance = $modal.open({
       templateUrl: '/states/calendarModal.html',
-      size: size,
+      size: 'lg',
     });
+        
+    this.eventSource = {
+            url: "https://www.googleapis.com/calendar/v3/calendars/5hdm5prrvpkfl6h749ptci39eg@group.calendar.google.com/events?key=AIzaSyAZgcdMkQSiU18Hx8sgSQCKZXxljAwMDGU",
+            className: 'gcal-event',           // an option!
+    };
+//        {
+//        events: {
+//            googleCalendarApiKey: 'AIzaSyAZgcdMkQSiU18Hx8sgSQCKZXxljAwMDGU',
+//            googleCalendarId: '5hdm5prrvpkfl6h749ptci39eg@group.calendar.google.com'
+//        }
+//    }
+     this.eventSources = [this.eventSource]
 
-  };
+    }
+
+    
+    /* config object */
+    this.uiConfig = {
+      calendar:{
+        height: 550,
+        header:{
+          left: '',
+          center: 'title',
+          right: 'today prev,next'
+        },
+      }
+    };
 
 
   this.trackList = [{

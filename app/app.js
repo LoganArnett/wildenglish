@@ -1,4 +1,4 @@
-angular.module('wildEnglish', ['ui.bootstrap','ui.utils','ui.router','ngAnimate','restangular', 'plangular'])
+angular.module('wildEnglish', ['ui.bootstrap','ui.utils','ui.router', 'ui.calendar', 'ngAnimate','restangular', 'plangular'])
 
 .config(function($stateProvider, $urlRouterProvider, $locationProvider, RestangularProvider) {
     

@@ -10,16 +10,17 @@
   
 
   <link rel="stylesheet" href="vendor/bootstrap/dist/css/bootstrap.css" />
+  <link rel="stylesheet" href="vendor/fullcalendar/fullcalendar.css">
   
   <!-- build:css styles/app.css -->
-  <link rel="stylesheet" type="text/css" href="../build/tmp/app.css" />
+  <link rel="stylesheet" type="text/css" href="app.css" />
   <!-- endbuild -->
 
 </head>
 <body>
 
 
-  <div>
+  <div id="background-body">
     <div id="content" class="container">
       <div class="row">
         <div ui-view>
@@ -31,7 +32,6 @@
   <!-- build:js scripts/vendor.js -->
   <script src="vendor/jquery/dist/jquery.js"></script>
   <script src="vendor/underscore/underscore.js"></script>
-  <script src="vendor/bootstrap/dist/js/bootstrap.js"></script>
   <script src="vendor/angular/angular.js"></script>
   <script src="vendor/angular-ui-router/release/angular-ui-router.js"></script>
   <script src="vendor/angular-animate/angular-animate.js"></script>
@@ -43,6 +43,9 @@
   <script src="vendor/moment/moment.js"></script>
   <script src="vendor/lodash/dist/lodash.compat.js"></script>
   <script src="vendor/restangular/dist/restangular.js"></script>
+  <script src="vendor/fullcalendar/fullcalendar.js"></script>
+  <script src="vendor/fullcalendar/gcal.js"></script>
+  <script src="vendor/angular-ui-calendar/src/calendar.js"></script>
   <!-- endbuild -->
 
 
