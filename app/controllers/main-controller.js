@@ -36,7 +36,7 @@ angular.module('wildEnglish')
     this.open = function () {
 
     var modalInstance = $modal.open({
-      templateUrl: '/states/calendarModal.html',
+      templateUrl: '../app/states/calendarModal.html',
       size: 'lg',
     });
         
