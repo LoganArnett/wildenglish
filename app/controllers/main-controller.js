@@ -36,36 +36,12 @@ angular.module('wildEnglish')
     this.open = function () {
 
     var modalInstance = $modal.open({
-      templateUrl: '../app/states/calendarModal.html',
+      templateUrl: '../states/calendarModal.html',
+      controller: 'ModalCtrl',
       size: 'lg',
     });
-        
-    this.eventSource = {
-            url: "https://www.googleapis.com/calendar/v3/calendars/5hdm5prrvpkfl6h749ptci39eg@group.calendar.google.com/events?key=AIzaSyAZgcdMkQSiU18Hx8sgSQCKZXxljAwMDGU",
-            className: 'gcal-event',           // an option!
-    };
-//        {
-//        events: {
-//            googleCalendarApiKey: 'AIzaSyAZgcdMkQSiU18Hx8sgSQCKZXxljAwMDGU',
-//            googleCalendarId: '5hdm5prrvpkfl6h749ptci39eg@group.calendar.google.com'
-//        }
-//    }
-     this.eventSources = [this.eventSource]
-
-    }
-
     
-    /* config object */
-    this.uiConfig = {
-      calendar:{
-        height: 550,
-        header:{
-          left: '',
-          center: 'title',
-          right: 'today prev,next'
-        },
-      }
-    };
+    }
 
 
   this.trackList = [{
