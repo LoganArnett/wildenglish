@@ -11,11 +11,6 @@ angular.module('wildEnglish', ['ui.bootstrap','ui.utils','ui.router', 'ui.calend
         templateUrl: 'states/main.html',
         controller: 'MainCtrl',
         controllerAs: 'app',
-        resolve: {
-                calendarEvents: function(Restangular){
-                    return Restangular.one('events?key=AIzaSyAZgcdMkQSiU18Hx8sgSQCKZXxljAwMDGU').get();
-                }
-            }
       })
     /* Add New States Above */
     $urlRouterProvider.otherwise('/main');

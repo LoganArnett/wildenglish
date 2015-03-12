@@ -2,6 +2,10 @@
 
 angular.module('wildEnglish')
 
+   .factory('calendarEvents', function(Restangular){
+        return Restangular.one('events?key=AIzaSyAZgcdMkQSiU18Hx8sgSQCKZXxljAwMDGU').get();
+    })
+
    .controller('MainCtrl', function(Restangular, calendarEvents, $modal, uiCalendarConfig) {
     var self = this;
     
@@ -40,8 +44,35 @@ angular.module('wildEnglish')
       controller: 'ModalCtrl',
       size: 'lg',
     });
+       
+//"https://www.googleapis.com/calendar/v3/calendars/5hdm5prrvpkfl6h749ptci39eg@group.calendar.google.com/events?key=AIzaSyAZgcdMkQSiU18Hx8sgSQCKZXxljAwMDGU",
     
+            this.eventSource = {
+            url: "https://www.google.com/calendar/feeds/5hdm5prrvpkfl6h749ptci39eg%40group.calendar.google.com/public/basic", 
+            className: 'gcal-event',           // an option!
+    };
+//        {
+//        events: {
+//            googleCalendarApiKey: 'AIzaSyAZgcdMkQSiU18Hx8sgSQCKZXxljAwMDGU',
+//            googleCalendarId: '5hdm5prrvpkfl6h749ptci39eg@group.calendar.google.com'
+//        }
+//    }
+     this.eventSources = [this.eventSource]
+
     }
+
+    
+    /* config object */
+    this.uiConfig = {
+      calendar:{
+        height: 550,
+        header:{
+          left: '',
+          center: 'title',
+          right: 'today prev,next'
+        },
+      }
+    };
 
 
   this.trackList = [{
