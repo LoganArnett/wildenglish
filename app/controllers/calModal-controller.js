@@ -2,24 +2,24 @@
 
 angular.module('wildEnglish')
 
-   .controller('ModalCtrl', function(Restangular, uiCalendarConfig, calendarEvents){
+   .controller('ModalCtrl', function(Restangular, uiCalendarConfig, calendarEvents, $scope){
     var date = new Date(),
         d = date.getDate(),
         m = date.getMonth(),
         y = date.getFullYear();
     
-    this.calEvents = calendarEvents;
+    $scope.calEvents = calendarEvents;
     
     
     /* event source that pulls from google.com */
-    this.eventSource = {
+    $scope.eventSource = {
             url: "https://www.google.com/calendar/feeds/5hdm5prrvpkfl6h749ptci39eg%40group.calendar.google.com/public/basic",
-            className: 'gcal-event',           // an option!
-            currentTimezone: 'America/Chicago' // an option!
+            className: 'gcal-event',
+            googleCalendarApiKey: 'AIzaSyAZgcdMkQSiU18Hx8sgSQCKZXxljAwMDGU',
     };
         
     /* event source that contains custom events on the scope */
-    this.events = [
+    $scope.events = [
       {title: 'All Day Event',start: new Date(y, m, 1)},
       {title: 'Long Event',start: new Date(y, m, d - 5),end: new Date(y, m, d - 2)},
       {id: 999,title: 'Repeating Event',start: new Date(y, m, d - 3, 16, 0),allDay: false},
@@ -29,7 +29,7 @@ angular.module('wildEnglish')
     ];
         
     /* event source that calls a function on every view switch */
-    this.eventsF = function (start, end, timezone, callback) {
+    $scope.eventsF = function (start, end, timezone, callback) {
       var s = new Date(start).getTime() / 1000;
       var e = new Date(end).getTime() / 1000;
       var m = new Date(start).getMonth();
@@ -39,7 +39,7 @@ angular.module('wildEnglish')
     
    
     /* config object */
-    this.uiConfig = {
+    $scope.uiConfig = {
       calendar:{
         height: 450,
         editable: true,
@@ -52,7 +52,7 @@ angular.module('wildEnglish')
     };
 
     /* event sources array*/
-    this.eventSources = [this.calEvents];
+    $scope.eventSources = [$scope.eventSource];
     
-//    this.events, this.eventSource, this.eventsF
+//    $scope.events, $scope.eventSource, $scope.eventsF
 });
