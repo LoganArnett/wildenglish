@@ -9,8 +9,9 @@ angular.module('wildEnglish')
    .controller('MainCtrl', function(Restangular, calendarEvents, $modal, uiCalendarConfig) {
     var self = this;
     
-    this.events = calendarEvents;
-    this.items = this.events.items;
+    calendarEvents.then(function(events){
+        self.items = events.items;
+    });
     
     this.today = Date.now();
    
