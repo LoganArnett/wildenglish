@@ -41,8 +41,6 @@ angular.module('wildEnglish')
     /* config object */
     $scope.uiConfig = {
       calendar:{
-        height: 450,
-        editable: true,
         header:{
           left: 'title',
           center: '',

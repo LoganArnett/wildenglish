@@ -132,6 +132,12 @@ a.show-link:hover {
   .progress .progress-bar-wild {
     background-color: #ff0D00; }
 
+.fc-event {
+  font-size: 1.1em;
+  line-height: 2.3;
+  border: 1px solid #ff0D00;
+  background-color: #ff0D00; }
+
 /* Small devices (tablets, 768px and up) */
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {

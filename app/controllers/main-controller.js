@@ -31,11 +31,12 @@ angular.module('wildEnglish')
 
     this.open = function () {
 
-    var modalInstance = $modal.open({
-      templateUrl: '../states/calendarModal.html',
-      controller: 'ModalCtrl',
-      size: 'lg',
-    });
+        var modalInstance = $modal.open({
+          templateUrl: '../states/calendarModal.html',
+          controller: 'ModalCtrl',
+          size: 'lg',
+        });
+    }
        
 
   this.trackList = [{

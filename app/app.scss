@@ -191,6 +191,13 @@ a.show-link:hover {
     }
 }
 
+.fc-event {
+    font-size: 1.1em;
+    line-height: 2.3;
+    border: 1px solid $wildOrange;
+    background-color: $wildOrange;
+}
+
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {

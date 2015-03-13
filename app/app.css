@@ -192,6 +192,16 @@ footer {
     text-align: center;
 }
 
+.fc-event {
+  font-size: 1.1em;
+  line-height: 2.3;
+  border: 1px solid #ff0D00;
+  background-color: #ff0D00; }
+
+.modal-dialog {
+    width: 55%;
+}
+
 /* Small devices (tablets, 768px and up) */
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
