@@ -51,11 +51,8 @@
 
       <div plangular="https://soundcloud.com/wildenglish/sets/wildenglishset" class="plangular">
         <div class="p2">
-          <div class="flex flex-center">
-            <h4 class="m0 flex-auto">{{playlist.user.username}}</h4>
-            <samp class="h6">{{ currentTime | hhmmss }} / {{ duration | hhmmss }}</samp>
-          </div>
           <h3 class="h1 caps mt0">{{track.title}}</h3>
+          <samp class="h6">{{ currentTime | hhmmss }} / {{ duration | hhmmss }}</samp>
           <img class="artwork" ng-src="{{ track.artwork_url }}" alt="{{ track.title }}" />
           <div class="flex flex-center">
             <button class=""
