@@ -16,7 +16,7 @@
 //	}
 //}
 
-// Colors 
+// Colors
 $wildOrange:        #ff0D00;
 $white:             #fff;
 $black:             #000;
@@ -24,7 +24,7 @@ $red:               #f52;
 $darken-2:          rgba(black, 1/8);
 
 
-// Tools 
+// Tools
 $center:            0 auto;
 
 
@@ -55,7 +55,7 @@ body {
     float: none;
     width: 60%;
     margin: $center;
-    
+
     li {
         width: 25%;
     }
@@ -116,7 +116,7 @@ a.show-link:hover {
 
 .upcoming {
     display: inline;
-    
+
     .show-summary {
         color: $wildOrange;
         display: inline;
@@ -125,7 +125,7 @@ a.show-link:hover {
     .show-summary:hover {
         color: gray;
         text-decoration: none;
-    } 
+    }
 }
 
 .btn-wild {
@@ -143,18 +143,18 @@ a.show-link:hover {
     margin: $center;
     margin-top: 15%;
     background-color: rgba(255,255,255,0.3);
-    
+
     .plangular {
-        
+
         .track-info {
         width: 90%;
         margin: $center;
         }
-        
+
         .track-name {
             padding: 0;
             color: $black;
-            
+
             small {
                 font-size: 80%;
                 color: darkslategray;
@@ -173,7 +173,7 @@ a.show-link:hover {
                 width: 18%;
             }
         }
-    } 
+    }
 }
 
 .progress {
@@ -185,7 +185,7 @@ a.show-link:hover {
     border: 0;
     -webkit-appearance: none;
     cursor: pointer;
-    
+
     .progress-bar-wild {
         background-color: $wildOrange;
     }
@@ -196,6 +196,17 @@ a.show-link:hover {
     line-height: 2.3;
     border: 1px solid $wildOrange;
     background-color: $wildOrange;
+}
+
+.list-reset {
+  list-style-type: none;
+  li {
+    border-bottom: 1px solid rgba(0,0,0,0.5);
+    button {
+      background: transparent;
+      border: 0;
+    }
+  }
 }
 
 
@@ -215,7 +226,7 @@ a.show-link:hover {
   color: $wildOrange;
   background-color: transparent;
 }
-    
+
 
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {

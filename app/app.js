@@ -1,10 +1,11 @@
 angular.module('wildEnglish', ['ui.bootstrap','ui.utils','ui.router', 'ui.calendar', 'ngAnimate','restangular', 'plangular'])
 
-.config(function($stateProvider, $urlRouterProvider, $locationProvider, RestangularProvider) {
-    
+.config(function($stateProvider, $urlRouterProvider, $locationProvider, RestangularProvider, plangularConfigProvider) {
+
     RestangularProvider.setBaseUrl('https://www.googleapis.com/calendar/v3/calendars/5hdm5prrvpkfl6h749ptci39eg@group.calendar.google.com');
-    
-  
+
+      plangularConfigProvider.clientId = '1ecb2d2bd0cf3fcd6ef73a91f7685b6d';
+      
     $stateProvider
      .state('main', {
         url: '/main',
@@ -31,4 +32,3 @@ angular.module('wildEnglish', ['ui.bootstrap','ui.utils','ui.router', 'ui.calend
     };
 
 });
-
