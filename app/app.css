@@ -127,7 +127,8 @@ a.show-link:hover {
   width: 80%;
   margin: 0 auto;
   margin-top: 15%;
-  background-color: rgba(255, 255, 255, 0.8); }
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 8px;}
   .soundcloud .plangular .track-info {
     width: 90%;
     margin: 0 auto; }
@@ -148,7 +149,8 @@ a.show-link:hover {
     .soundcloud .plangular .player-buttons button {
       width: 18%; }
 .plangular {
-  position: relative
+  position: relative;
+  padding: 2%;
 }
 
 .plangular img {
