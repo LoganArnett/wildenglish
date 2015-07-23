@@ -81,7 +81,7 @@
         ng-class="{'is-active': player.playing === track.src }"
         ng-click="playPause($index)">
         <span class="flex-auto">
-          {{track.user.username}} - {{track.title}}
+          {{track.title}}
         </span>
         <span class="h6">
           {{ track.duration / 1000 | hhmmss }}
