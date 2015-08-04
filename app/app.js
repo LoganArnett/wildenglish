@@ -10,9 +10,7 @@ angular.module('wildEnglish', ['ui.bootstrap','ui.utils','ui.router', 'ui.calend
      .state('main', {
         url: '/main',
         templateUrl: 'states/main.html',
-        data: {
-            title: "Wild English Music",
-        }
+        title: "Wild English Music",
       })
     /* Add New States Above */
     $urlRouterProvider.otherwise('/main');
