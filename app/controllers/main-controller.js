@@ -10,7 +10,7 @@ angular.module('wildEnglish')
     var self = this;
     
    var pageTitleObj = $state;
-   this.pageTitle = pageTitleObj.current.data.title
+   this.pageTitle = pageTitleObj.current
    console.log(pageTitleObj)
    console.log(this.pageTitle)
     
