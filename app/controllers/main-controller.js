@@ -6,8 +6,10 @@ angular.module('wildEnglish')
         return Restangular.one('events?key=AIzaSyAZgcdMkQSiU18Hx8sgSQCKZXxljAwMDGU').get();
     })
 
-   .controller('MainCtrl', function(Restangular, calendarEvents, $modal, uiCalendarConfig) {
+   .controller('MainCtrl', function(Restangular, calendarEvents, $modal, uiCalendarConfig, $state) {
     var self = this;
+    
+    this.pageTitle = $state.current.data.title;
     
     calendarEvents.then(function(events){
         self.items = events.items;
