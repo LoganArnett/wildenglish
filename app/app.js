@@ -10,8 +10,6 @@ angular.module('wildEnglish', ['ui.bootstrap','ui.utils','ui.router', 'ui.calend
      .state('main', {
         url: '/main',
         templateUrl: 'states/main.html',
-        controller: 'MainCtrl',
-        controllerAs: 'app',
         data: {
             title: "Wild English Music",
         }
