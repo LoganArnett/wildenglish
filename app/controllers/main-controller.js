@@ -9,7 +9,8 @@ angular.module('wildEnglish')
    .controller('MainCtrl', function(Restangular, calendarEvents, $modal, uiCalendarConfig, $state) {
     var self = this;
     
-    this.pageTitle = $state.current.data.title;
+   //  
+   console.log($state)
     
     calendarEvents.then(function(events){
         self.items = events.items;
