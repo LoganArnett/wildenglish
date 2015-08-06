@@ -13,7 +13,7 @@ function load_sketch_1animation(){
   path.getBoundingClientRect();
   // Define our transition
   path.style.transition = path.style.WebkitTransition =
-    'stroke-dashoffset 4s ease-in-out';
+    'stroke-dashoffset 1s ease-in-out';
   // Go!
   path.style.strokeDashoffset = '0';
 }};
@@ -35,7 +35,7 @@ function load_sketch_2animation(){
   path.getBoundingClientRect();
   // Define our transition
   path.style.transition = path.style.WebkitTransition =
-    'stroke-dashoffset 4s ease-in-out';
+    'stroke-dashoffset 1s ease-in-out';
   // Go!
   path.style.strokeDashoffset = '0';
 }};
@@ -57,7 +57,7 @@ function load_sketch_3animation(){
   path.getBoundingClientRect();
   // Define our transition
   path.style.transition = path.style.WebkitTransition =
-    'stroke-dashoffset 4s ease-in-out';
+    'stroke-dashoffset 1s ease-in-out';
   // Go!
   path.style.strokeDashoffset = '0';
 }};
@@ -79,7 +79,7 @@ function load_sketch_4animation(){
   path.getBoundingClientRect();
   // Define our transition
   path.style.transition = path.style.WebkitTransition =
-    'stroke-dashoffset 4s ease-in-out';
+    'stroke-dashoffset 1s ease-in-out';
   // Go!
   path.style.strokeDashoffset = '0';
 }};
@@ -101,7 +101,7 @@ function load_sketch_5animation(){
   path.getBoundingClientRect();
   // Define our transition
   path.style.transition = path.style.WebkitTransition =
-    'stroke-dashoffset 4s ease-in-out';
+    'stroke-dashoffset 1s ease-in-out';
   // Go!
   path.style.strokeDashoffset = '0';
 }};
@@ -123,7 +123,7 @@ function load_sketch_6animation(){
   path.getBoundingClientRect();
   // Define our transition
   path.style.transition = path.style.WebkitTransition =
-    'stroke-dashoffset 4s ease-in-out';
+    'stroke-dashoffset 1s ease-in-out';
   // Go!
   path.style.strokeDashoffset = '0';
 }};
@@ -145,7 +145,7 @@ function load_sketch_7animation(){
   path.getBoundingClientRect();
   // Define our transition
   path.style.transition = path.style.WebkitTransition =
-    'stroke-dashoffset 4s ease-in-out';
+    'stroke-dashoffset 1s ease-in-out';
   // Go!
   path.style.strokeDashoffset = '0';
 }};
@@ -167,7 +167,7 @@ function load_sketch_8animation(){
   path.getBoundingClientRect();
   // Define our transition
   path.style.transition = path.style.WebkitTransition =
-    'stroke-dashoffset 4s ease-in-out';
+    'stroke-dashoffset 1s ease-in-out';
   // Go!
   path.style.strokeDashoffset = '0';
 }};
@@ -189,7 +189,7 @@ function load_sketch_9animation(){
   path.getBoundingClientRect();
   // Define our transition
   path.style.transition = path.style.WebkitTransition =
-    'stroke-dashoffset 4s ease-in-out';
+    'stroke-dashoffset 1s ease-in-out';
   // Go!
   path.style.strokeDashoffset = '0';
 }};
@@ -211,7 +211,7 @@ function load_sketch_10animation(){
   path.getBoundingClientRect();
   // Define our transition
   path.style.transition = path.style.WebkitTransition =
-    'stroke-dashoffset 4s ease-in-out';
+    'stroke-dashoffset 1s ease-in-out';
   // Go!
   path.style.strokeDashoffset = '0';
 }};
@@ -233,7 +233,7 @@ function load_sketch_11animation(){
   path.getBoundingClientRect();
   // Define our transition
   path.style.transition = path.style.WebkitTransition =
-    'stroke-dashoffset 4s ease-in-out';
+    'stroke-dashoffset 1s ease-in-out';
   // Go!
   path.style.strokeDashoffset = '0';
 }};
@@ -255,7 +255,7 @@ function load_sketch_12animation(){
   path.getBoundingClientRect();
   // Define our transition
   path.style.transition = path.style.WebkitTransition =
-    'stroke-dashoffset 4s ease-in-out';
+    'stroke-dashoffset 1s ease-in-out';
   // Go!
   path.style.strokeDashoffset = '0';
 }};
